@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Bubble Typing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            
+        </header>
+        <main><div id="score">
+            <p>Score: <span id="score">0</span></p>
+            </div>
+            <div id="game-area"></div>
+            <div class="input-container">
+                <button id="start-btn">Start</button>
+                <input type="text" id="typing-input" placeholder="Type the words here..." disabled>
+                <button id="stop-btn" disabled>Stop</button>
+            </div>
+            <div class="controls">
+                <label for="difficulty">Difficulty:</label>
+                <select id="difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="normal" selected>Normal</option>
+                    <option value="hard">Hard</option>
+                </select>
+                
+                
+            </div>
+        </main>
+        <footer>
+            
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
