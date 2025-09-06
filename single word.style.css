@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #FFFBDE;
+    margin: 0;
+    font-size: 18px; /* Base font size */
+}
+
+.container {
+    background-color: #91C8E4;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 600px; /* Increased width */
+    max-width: 90%; /* Ensure responsiveness */
+}
+
+h1 {
+    color: #333;
+    font-size: 2.8em; /* Larger heading */
+    margin-bottom: 25px;
+}
+
+#word-display {
+    font-size: 3em; /* Significantly larger word display */
+    margin-bottom: 30px;
+    color: #007bff;
+    min-height: 1.5em; /* Ensure consistent height */
+}
+
+#word-display span {
+    transition: background-color 0.1s ease;
+}
+
+#word-display span.correct {
+    color: green;
+}
+
+#word-display span.incorrect {
+    color: red;
+    text-decoration: underline;
+}
+
+#word-input {
+    width: 90%; /* Wider input field */
+    padding: 15px;
+    font-size: 1.8em; /* Larger input text */
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.game-info p {
+    font-size: 1.4em;
+    margin: 8px 0;
+}
+
+.game-info span {
+    font-weight: bold;
+    color: #28a745;
+}
+
+#start-button {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 7px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+#start-button:hover {
+    background-color: #0056b3;
+}

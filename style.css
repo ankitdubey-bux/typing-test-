@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    color: #2c3e50;
+    font-weight: 600;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #7f8c8d;
+    margin-bottom: 40px;
+    font-size: 1.1em;
+}
+
+.games-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.game-card {
+    background-color: #ffffff;
+    border: 1px solid #ecf0f1;
+    border-radius: 12px;
+    padding: 25px;
+    text-decoration: none;
+    color: #34495e;
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.game-card:before {
+    content: '▶';
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 1.5em;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.game-card:hover {
+    transform: translateY(-10px);
+}
+
+.game-card h2 {
+    margin-top: 0;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.game-card p {
+    font-size: 0.95em;
+    color: #95a5a6;
+    line-height: 1.6;
+}
+
+/* Card Colors */
+.card-1 { border-left: 5px solid #3498db; }
+.card-1 h2 { color: #3498db; }
+.card-1:before { color: #3498db; }
+.card-1:hover { box-shadow: 0 15px 25px rgba(52, 152, 219, 0.2); }
+
+.card-2 { border-left: 5px solid #e74c3c; }
+.card-2 h2 { color: #e74c3c; }
+.card-2:before { color: #e74c3c; }
+.card-2:hover { box-shadow: 0 15px 25px rgba(231, 76, 60, 0.2); }
+
+.card-3 { border-left: 5px solid #2ecc71; }
+.card-3 h2 { color: #2ecc71; }
+.card-3:before { color: #2ecc71; }
+.card-3:hover { box-shadow: 0 15px 25px rgba(46, 204, 113, 0.2); }
+
+.card-4 { border-left: 5px solid #f1c40f; }
+.card-4 h2 { color: #f1c40f; }
+.card-4:before { color: #f1c40f; }
+.card-4:hover { box-shadow: 0 15px 25px rgba(241, 196, 15, 0.2); }
+
+.card-5 { border-left: 5px solid #9b59b6; }
+.card-5 h2 { color: #9b59b6; }
+.card-5:before { color: #9b59b6; }
+.card-5:hover { box-shadow: 0 15px 25px rgba(155, 89, 182, 0.2); }
+
+.game-card:hover:before {
+    opacity: 1;
+}

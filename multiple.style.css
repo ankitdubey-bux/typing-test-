@@ -1,0 +1,126 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #799EFF;
+    color: #333;
+}
+
+.container {
+    background-color:#fb9d9d;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+h1 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.word-display {
+    min-height: 100px;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.word {
+    background-color: #e9ecef;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 1.2em;
+    color: #555;
+    white-space: nowrap;
+}
+
+.text-input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 1.1em;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.text-input:focus {
+    border-color: #0056b3;
+}
+
+.buttons {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.start-button,
+.stop-button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 5px;
+}
+
+.start-button:hover {
+    background-color: #218838;
+}
+
+.stop-button {
+    background-color: #dc3545;
+}
+
+.stop-button:hover {
+    background-color: #c82333;
+}
+
+.stop-button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+.results {
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+.results p {
+    margin: 5px 0;
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+    text-decoration: line-through;
+}
+
+.word.current {
+    background-color: #007bff;
+    color: white;
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+}
+
+.word.incorrect-typing {
+    background-color: #ffdddd; /* Light red background */
+    border: 1px solid red;
+}
