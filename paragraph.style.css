@@ -1,6 +1,6 @@
 body {
     font-family: sans-serif;
-    background-color: #8A0000;
+    background-color: #8C1007;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-    background-color:#FFC29B;
+    background-color:#FFF0C4;
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -24,6 +24,7 @@ h1 {
 
 #paragraph-container {
     border: 1px solid white;
+    backgrpund-color:#660B0;
     color:Black;
     padding: 1rem;
     margin-bottom: 1rem;
