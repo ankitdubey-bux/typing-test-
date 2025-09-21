@@ -20,7 +20,21 @@ const sentences = [
     "The future belongs to those who believe in the beauty of their dreams.",
     "Strive not to be a success, but rather to be of value.",
     "The mind is everything. What you think you become.",
-    "Eighty percent of success is showing up."
+    "Eighty percent of success is showing up.",
+    "Can you please help me with this problem",
+    "I'm having trouble; could you give me a hand",
+    "I don't understand this; can you explain it to me",
+    "Could you assist me with this task",
+    "I need your guidance; can you help me out",
+    "Can you please show me how to do this",
+    "I'm stuck on this project; can you offer some advice",
+    "Recycling is important to help the environment.",
+    "I turn off lights when I leave a room to save energy.",
+   " We should plant more trees to improve air quality.",
+    "I try not to waste water when I'm washing dishes.",
+    "Pollution is a big problem in some cities.",
+    "I use reusable bags when I go shopping.",
+    "Global warming is a concern for our planet.",
 ];
 
 function getRandomSentence() {
