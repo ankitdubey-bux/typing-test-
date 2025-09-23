@@ -1,6 +1,6 @@
 body {
     font-family: sans-serif;
-    background-color: white;
+    background-color:#DD0303;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,7 +24,7 @@ h1 {
 
 #paragraph-container {
     border: 1px solid white;
-    background-color:##e9e9e9;
+    background-color:#e9e9e9;
     color:Black;
     padding: 1rem;
     margin-bottom: 1rem;
