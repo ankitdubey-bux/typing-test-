@@ -108,3 +108,9 @@ inputEl.addEventListener('input', () => {
 resetBtn.addEventListener('click', resetTest);
 
 updateParagraph();
+
+restBtn.addEventListener('keydown', (event) => {
+  if (event.key === 'Enter') {
+      updateParagraph();
+  }
+});
